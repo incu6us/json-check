@@ -27,22 +27,25 @@ output of RESTfull service:
 </code>
 
 
-
+example 1:
 ```sh
 $ ./launcher.py -u http://example.com/rest/getSystemIdConnectionStatus/all -k test2
 ```
 output: connected
 
+example 2:
 ```sh
 $ ./launcher.py -u http://example.com/rest/getSystemIdConnectionStatus/all -k "test1 test2"
 ```
 output: disconnected connected
 
+example 3:
 ```sh
 $ ./launcher.py -u http://example.com/rest/getSystemIdConnectionStatus/all -k test1 -e disconnected
 ```
 output: True
 
+example 4:
 ```sh
 $ ./launcher.py -u http://example.com/rest/getSystemIdConnectionStatus/all -k "test1 test2" -n disconnected
 ```
