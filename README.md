@@ -1,4 +1,4 @@
-# Utils
+# Check JSON data
 ```sh
 usage: launcher.py [-h] [-u URL] [-k KEY] [-e EXIST] [-n NOTEXIST]
 
