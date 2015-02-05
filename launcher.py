@@ -28,15 +28,15 @@ elif args.url != None and args.key != None and args.exist != None and args.notex
     for key in list(args.key.split(" ")):
         result.append(jsonCheck.getValue(key=key))
     if args.exist in result:
-        print True
+        print "true"
     else:
-        print False
+        print "false"
 
 elif args.url != None and args.key != None and args.exist == None and args.notexist != None:
     jsonCheck = JsonCheck(url=args.url)
     for key in list(args.key.split(" ")):
         result.append(jsonCheck.getValue(key=key))
     if args.notexist not in result:
-        print True
+        print "true"
     else:
-        print False
+        print "false"
