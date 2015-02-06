@@ -43,10 +43,10 @@ example 3:
 ```sh
 $ ./launcher.py -u http://example.com/rest/getSystemIdConnectionStatus/all -k test1 -e disconnected
 ```
-output: True
+output: true
 
 example 4:
 ```sh
 $ ./launcher.py -u http://example.com/rest/getSystemIdConnectionStatus/all -k "test1 test2" -n disconnected
 ```
-output: False
+output: false
